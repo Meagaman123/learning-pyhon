@@ -1,4 +1,4 @@
-import time
+import time 
 
 # Use for, .split(), and if to create a Statement that will print out words that start with 's':
 print('mission 1\n')
