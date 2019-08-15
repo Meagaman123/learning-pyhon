@@ -1,13 +1,13 @@
 
                     ############################
-                    JUPYTER NOTEBOOK EXCERCICES#
+                    #JUPYTER NOTEBOOK EXCERCICES#
                     ############################
 
 ###################### TASK 1 #######################
-LESSER OF TWO EVENS: Write a function that returns the lesser of two given numbers if both numbers are even,
-but returns the greater if one or both numbers are odd
-lesser_of_two_evens(2,4) --> 2
-lesser_of_two_evens(2,5) --> 5
+#LESSER OF TWO EVENS: Write a function that returns the lesser of two given numbers if both numbers are even,
+#but returns the greater if one or both numbers are odd
+# lesser_of_two_evens(2,4) --> 2
+# lesser_of_two_evens(2,5) --> 5
 
 def lesserfunc(n1,n2):
     if n1%2 == 0 and n2%2 == 0:
@@ -80,8 +80,8 @@ def macdonald_func(mystring):
 
 macdonald_func(input("Enter a word: "))
 
-MASTER YODA:
-Given a sentence, return a sentence with the words reversed
+#MASTER YODA:
+# Given a sentence, return a sentence with the words reversed
 
 def master_yoda(mystring):
     word_list = mystring.split()
@@ -97,11 +97,11 @@ def master_yoda(mystring):
 
 print(master_yoda(input("Enter a sentence: ")))
 
-ALMOST THERE:
-Given an integer n, return True if n is within 10 of either 100 or 200
-
-ALMOST THERE:
-Given an integer n, return True if n is within 10 of either 100 or 200
+# ALMOST THERE:
+# Given an integer n, return True if n is within 10 of either 100 or 200
+#
+# ALMOST THERE:
+# Given an integer n, return True if n is within 10 of either 100 or 200
 
 def almost_there(num1):
     return abs(100-num1) <= 10 or abs(200-num1) <=10
@@ -122,8 +122,8 @@ def find33(nums):
 
 print(find33([1,2,3,4,3,3,1,3]))
 
-PAPER DOLL:
-Given a string, return a string where for every character in the original there are three characters
+# PAPER DOLL:
+# Given a string, return a string where for every character in the original there are three characters
 
 def paper_doll(mystring):
     trpl_word = ''
@@ -131,12 +131,12 @@ def paper_doll(mystring):
         trpl_word = trpl_word + mystring[i] * 3
     print(trpl_word)
 
-paper_doll(input('ENDER WRIRDER HERE: '))
+paper_doll(input('ENTER WORD HERE: '))
 
-BLACKJACK:
-Given three integers between 1 and 11, if their sum is less than or equal to 21, return their sum.
-If their sum exceeds 21 and there's an eleven, reduce the total sum by 10.
-Finally, if the sum (even after adjustment) exceeds 21, return 'BUST'
+# BLACKJACK:
+# Given three integers between 1 and 11, if their sum is less than or equal to 21, return their sum.
+# If their sum exceeds 21 and there's an eleven, reduce the total sum by 10.
+# Finally, if the sum (even after adjustment) exceeds 21, return 'BUST'
 
 def blackjack(n1,n2,n3):
     num_list = [n1,n2,n3]
@@ -158,10 +158,10 @@ n3 = int(input("ENTER NUMBER 3: "))
 print(blackjack(n1,n2,n3))
 
 
-SUMMER OF '69:
-Return the sum of the numbers in the array, except ignore sections of numbers
-starting with a 6 and extending to the next 9 (every 6 will be followed by at least one 9).
-Return 0 for no numbers.
+# SUMMER OF '69:
+# Return the sum of the numbers in the array, except ignore sections of numbers
+# starting with a 6 and extending to the next 9 (every 6 will be followed by at least one 9).
+# Return 0 for no numbers.
 
 def summer69(mylist):
     newlist = []
@@ -180,8 +180,9 @@ def summer69(mylist):
 
 print(summer69([9,2,6,7,9]))
 
-SPY GAME:
-Write a function that takes in a list of integers and returns True if it contains 007 in order
+# SPY GAME:
+# Write a function that takes in a list of integers and returns True if it contains 007 in order
+
 def spy_game(mylist):
     last_num = 1
     last_last_num = 1
@@ -196,12 +197,9 @@ print(spy_game([1,0,7,5,1,0,7,2,3]))
 
 
 
-COUNT PRIMES:
-Write a function that returns the number of prime numbers that exist up to and including a given number
+# COUNT PRIMES:
+# Write a function that returns the number of prime numbers that exist up to and including a given number
 
-
-
-uncomment the following lines to take input from the user
 lower = int(input("Enter lower range: "))
 upper = int(input("Enter upper range: "))
 def count_primes(upper):
